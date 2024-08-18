@@ -46,7 +46,7 @@ jobs:
           aws-region: us-east-1  
  
       - name: Update kube config
-        run: aws eks update-kubeconfig --name Wisecow-cluster --region us-east-1
+        run: aws eks update-kubeconfig --name Wisecow-cluster --region ap-south-1
       
       - name: Deploy to Kubernetes
         env:
