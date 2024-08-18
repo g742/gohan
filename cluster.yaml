@@ -4,7 +4,7 @@ kind: ClusterConfig
 
 metadata:
   name: Wisecow-cluster
-  region: us-east-1
+  region: ap-south-1
   version: "1.23"
 
 nodeGroups:
@@ -12,4 +12,4 @@ nodeGroups:
     instanceType: t2.micro
     desiredCapacity: 2
     volumeSize: 8
-availabilityZones: ['us-east-1a', 'us-east-1b']
+availabilityZones: ['ap-south-1']
