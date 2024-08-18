@@ -22,7 +22,7 @@ jobs:
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         run: |
           docker build -t golushbz/shahbaz:latest .
-          docker login -u "golushbz" -p "plmnkobji" docker.io
+          echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
           docker push golushbz/shahbaz:latest
   deploy:
     needs: build
