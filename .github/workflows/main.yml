@@ -23,7 +23,7 @@ jobs:
         run: |
           docker build -t samarthr8/wisecow-app:latest .
           docker login -u "golushbz" -p "plmnkobji" docker.io
-          docker tag golushbz:gohan samarthr8/wisecow-app:latest
+          docker tag samarthr8/wisecow-app:gohan samarthr8/wisecow-app:latest
           docker push samarthr8/wisecow-app:latest
   deploy:
     needs: build
